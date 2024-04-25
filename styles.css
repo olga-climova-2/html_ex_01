@@ -123,11 +123,11 @@ nav a {
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    font-size: 10vw;
+    font-size: 5vw;
     color: var(--color-secondary);
     text-transform: uppercase;
     text-align: end;
-    line-height: 10vw;
+    line-height: 5vw;
     margin: 0 20px 20px 0;
 }
 
