@@ -82,8 +82,8 @@ nav a {
 
 .symbol-primary {
     color: var(--highlight-primary);
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 6vw;
+    line-height: 6vw;
 }
 
 .symbol-secondary {
@@ -232,6 +232,6 @@ nav a {
     font-style: normal;
     font-size: 4vw;
     letter-spacing: -0.1vw;
-    color: var(--color-muted);
+    color: var(--color-secondary);
     text-decoration: underline dotted;
 }
