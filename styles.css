@@ -88,7 +88,7 @@ nav a {
 
 .symbol-secondary {
     color: var(--highlight-secondary);
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .card {
@@ -127,7 +127,7 @@ nav a {
     color: var(--color-secondary);
     text-transform: uppercase;
     text-align: end;
-    line-height: calc(12px + 5vw);
+    line-height: 10vw;
     margin: 0 20px 20px 0;
 }
 
