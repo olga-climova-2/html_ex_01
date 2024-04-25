@@ -188,8 +188,8 @@ nav a {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 2vw;
-    line-height: 7vw;
+    font-size: calc(12px + 2vw);
+    line-height: calc(12px + 8vw);
     letter-spacing: 0.1vw;
 }
 
