@@ -119,11 +119,11 @@ nav a {
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    font-size: calc(15px + 5vw);
-    color: var(--color-secondary);
+    font-size: calc(10px + 2vw);
+    color: var(--color-muted);
     text-transform: uppercase;
     text-align: end;
-    line-height: 15px;
+    line-height: calc(12px + 5vw);
     margin: 0 20px 20px 0;
 }
 
@@ -214,7 +214,7 @@ nav a {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: calc(15px + 2vw);
+    font-size: calc(12px + 2vw);
     letter-spacing: 0.1vw;
 }
 
@@ -226,7 +226,7 @@ nav a {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: calc(10px + 2vw);
     letter-spacing: -0.1vw;
     color: var(--color-muted);
     text-decoration: underline dotted;
