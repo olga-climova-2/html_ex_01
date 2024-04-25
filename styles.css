@@ -1,9 +1,11 @@
 :root {
     --color-primary: rgb(50, 50, 50);
-    --color-secondary: rgb(240, 240, 240);
+    --color-secondary: rgb(255, 255, 255);
     --color-muted: rgb(162, 162, 162);
     --highlight-primary: rgb(0, 255, 102);
     --highlight-secondary: rgb(255, 0, 255);
+    --color-mark: rgb(253, 216, 53);
+    --color-button: rgb(30, 136, 229);
 }
 
 body {
@@ -91,15 +93,15 @@ nav a {
     font-size: 1.2em;
 }
 
-.card {
-    width: 40%;
-    margin: 0 auto;
-    box-shadow: 00px 10px 20px 5px rgb(170, 170, 170);
-}
-
 .book-image {
     display: flex;
     justify-content: center;
+}
+
+.book-image .card {
+    width: 45%;
+    margin: 0 auto;
+    box-shadow: 0px 10px 40px 3px var(--color-primary);
 }
 
 .whats-new {
@@ -113,8 +115,8 @@ nav a {
             /* left bottom */
         );
     background-color: var(--color-primary);
-    padding: 10% 5% 5% 5%;
-    margin: 3vh 0 15vh 0;
+    padding: 10% 5% 10% 5%;
+    margin: 3vh 0 5vh 0;
     color: var(--color-secondary)
 }
 
@@ -234,4 +236,79 @@ nav a {
     letter-spacing: -0.1vw;
     color: var(--color-secondary);
     text-decoration: underline dotted;
+}
+
+.description .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+}
+
+.description .card img {
+    width: 20%;
+    height: auto;
+}
+
+.description .card .title {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 575;
+    font-style: normal;
+    font-size: 6.25vw;
+    color: var(--color-primary);
+    text-align: start;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.description .card .desc {
+    text-align: center;
+    color: var(--color-primary);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5vw;
+    line-height: 6.5vw;
+    letter-spacing: 0.1vw;
+}
+
+.description .card .desc p {
+    margin: 2vw 0;
+}
+
+mark {
+    background-color: var(--color-mark);
+    font-weight: 700;
+    padding: 1vw;
+}
+
+.button-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 2vw 0;
+}
+
+.button-set .button {
+    background-color: var(--color-button);
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 575;
+    font-style: normal;
+    font-size: 4vw;
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 2vw 6.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.button-set .button-up {
+    background-color: var(--color-secondary);
+    height: 10.5vw;
+    width: auto;
 }
