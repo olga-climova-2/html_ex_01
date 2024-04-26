@@ -289,6 +289,7 @@ mark {
     flex-direction: row;
     justify-content: space-around;
     margin: 0 0 2vw 0;
+    height: 10vw;
 }
 
 .button-set .button {
@@ -302,13 +303,304 @@ mark {
     font-size: 4vw;
     color: var(--color-secondary);
     text-align: center;
-    padding: 2vw 6.5vw;
+    padding: 2vw 4vw;
     display: flex;
     align-items: center;
 }
 
 .button-set .button-up {
-    background-color: var(--color-secondary);
-    height: 10.5vw;
-    width: auto;
+    max-width: 10%;
+}
+
+.button-set .button-up img {
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 480px) {    
+    body {
+        background-size: 20%;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .inner {
+        margin: 0 auto;
+    }
+    
+    header .title {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 120px;
+        color: var(--color-primary);
+        line-height: 120px;
+    }
+    
+    header .subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 27px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px 0 50px 0;
+    }
+    
+    nav a {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 55px;
+        color: var(--color-primary);
+        line-height: 120px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        margin: 0 20px;
+    }
+    
+    .symbol-primary {
+        color: var(--highlight-primary);
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+    
+    .symbol-secondary {
+        color: var(--highlight-secondary);
+        font-size: 1.2em;
+    }
+    
+    .book-image {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .book-image .card {
+        width: 45%;
+        margin: 0 auto;
+        box-shadow: 0px 10px 40px 3px var(--color-primary);
+    }
+    
+    .whats-new {
+        clip-path: polygon(0 5%,
+                /* left top */
+                100% 0,
+                /* right top */
+                100% 100%,
+                /* right bottom */
+                0 95%
+                /* left bottom */
+            );
+        background-color: var(--color-primary);
+        padding: 10% 5% 10% 5%;
+        margin: 3vh 0 5vh 0;
+        color: var(--color-secondary)
+    }
+    
+    .whats-new .label {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 5vw;
+        color: var(--color-secondary);
+        text-transform: uppercase;
+        text-align: end;
+        line-height: 5vw;
+        margin: 0 20px 20px 0;
+    }
+    
+    .whats-new .title {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 10vw;
+        color: var(--color-secondary);
+        text-align: start;
+        margin: 20px 0;
+    }
+    
+    .whats-new .subtitle {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 8vw 0;
+    }
+    
+    .whats-new .subtitle .item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5vw 0 0;
+    }
+    
+    .whats-new .subtitle .item .small {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 3.5vw;
+        color: var(--color-muted);
+        text-align: start;
+        text-transform: uppercase;
+        line-height: 3.5vw;
+    }
+    
+    .whats-new .subtitle .item .large {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 10vw;
+        color: var(--color-secondary);
+        text-align: start;
+        line-height: 10vw;
+    }
+    
+    .whats-new hr {
+        margin: 5vw 0;
+    
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid var(--color-muted);
+        padding: 0;
+    }
+    
+    .whats-new .content {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 4vw;
+        line-height: 7vw;
+        letter-spacing: 0.1vw;
+    }
+    
+    .whats-new .cool-ref {
+        display: block;
+        text-align: center;
+        padding: 3vw 0;
+        border: 10px solid transparent;
+        border-image: linear-gradient(to bottom right,
+            #F44336,
+            #FF5722,
+            #FFEB3B,
+            #7CB342,
+            #4CAF50,
+            #26C6DA,
+            #03A9F4,
+            #1565C0,
+            #512DA8,
+            #9C27B0);
+        border-image-slice: 1;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: calc(4vw);
+        letter-spacing: 0.1vw;
+    }
+    
+    .whats-new .small-ref {
+        display: block;
+        text-align: center;
+        padding: 3vw 0;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 4vw;
+        letter-spacing: -0.1vw;
+        color: var(--color-secondary);
+        text-decoration: underline dotted;
+    }
+    
+    .description .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw;
+    }
+    
+    .description .card img {
+        width: 20%;
+        height: auto;
+    }
+    
+    .description .card .title {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 575;
+        font-style: normal;
+        font-size: 6.25vw;
+        color: var(--color-primary);
+        text-align: start;
+        margin: 20px 0;
+        text-transform: uppercase;
+    }
+    
+    .description .card .desc {
+        text-align: center;
+        color: var(--color-primary);
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 4vw;
+        line-height: 7vw;
+        letter-spacing: 0.1vw;
+    }
+    
+    .description .card .desc p {
+        margin: 2vw 0;
+    }
+    
+    mark {
+        background-color: var(--color-mark);
+        font-weight: 700;
+        padding: 1vw;
+    }
+    
+    .button-set {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 0 2vw 0;
+    }
+    
+    .button-set .button {
+        background-color: var(--color-button);
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 575;
+        font-style: normal;
+        font-size: 4vw;
+        color: var(--color-secondary);
+        text-align: center;
+        padding: 2vw 6.5vw;
+        display: flex;
+        align-items: center;
+    }
+    
+    .button-set .button-up {
+        background-color: var(--color-secondary);
+        height: 10.5vw;
+        width: auto;
+    }
 }
